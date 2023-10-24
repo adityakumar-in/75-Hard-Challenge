@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap');
+
+#daysContainer, #daysCover {
+    width: 96vw;
+    height: 90px;
+}
+#daysCover {
+    background: linear-gradient(to right, rgb(105, 28, 28), rgb(170, 65, 65), #76c1e7, #CCEEFF);
+    margin: 10px;
+    padding: 1px;
+}
+#daysContainer {
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden;
+    background-color: black;
+}
+#scrollContainer {
+    width: 100%;
+    overflow: hidden; /* Hide the scrollbar */
+}
+  
+
+/* Days Border and it's Adjustments with Media Queries */
+.border {
+    clip-path: polygon(12.5% 0, 87.5% 0, 100% 28%, 100% 72%, 87.5% 100%, 12.5% 100%, 0% 72%, 0% 28%);
+    border-radius: 85px;
+}
+@media only screen and (min-width: 1268px) {
+    .border {
+        clip-path: polygon(1.7% 0, 98.3% 0, 100% 20%, 100% 80%, 98.3% 100%, 1.7% 100%, 0% 80%, 0% 20%);
+        border-radius: 30px;
+    }
+}
+@media only screen and (min-width: 1068px) and (max-width: 1268px) {
+    .border {
+        clip-path: polygon(2% 0, 98% 0, 100% 20%, 100% 80%, 98% 100%, 2% 100%, 0% 80%, 0% 20%);
+        border-radius: 30px;
+    }
+}
+@media only screen and (min-width: 920px) and (max-width: 1068px) {
+    .border {
+        clip-path: polygon(3% 0, 97% 0, 100% 20%, 100% 80%, 97% 100%, 3% 100%, 0% 80%, 0% 20%);
+        border-radius: 35px;
+    }
+}
+@media only screen and (min-width: 720px) and (max-width: 920px) {
+    .border {
+        clip-path: polygon(3.5% 0, 96.5% 0, 100% 25%, 100% 75%, 96.5% 100%, 3.5% 100%, 0% 75%, 0% 25%);
+        border-radius: 37px;
+    }
+}
+@media only screen and (min-width: 688px) and (max-width: 720px) {
+    .border {
+        clip-path: polygon(4.5% 0, 95.5% 0, 100% 25%, 100% 75%, 95.5% 100%, 4.5% 100%, 0% 75%, 0% 25%);
+        border-radius: 39px;
+    }
+}
+@media only screen and (min-width: 542px) and (max-width: 688px) {
+    .border {
+        clip-path: polygon(5.5% 0, 94.5% 0, 100% 28%, 100% 72%, 94.5% 100%, 5.5% 100%, 0% 72%, 0% 28%);
+        border-radius: 42px;
+    }
+}
+@media only screen and (min-width: 494px) and (max-width: 542px) {
+    .border {
+        clip-path: polygon(6.5% 0, 93.5% 0, 100% 28%, 100% 72%, 93.5% 100%, 6.5% 100%, 0% 72%, 0% 28%);
+        border-radius: 44px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 494px) {
+    .border {
+        clip-path: polygon(8.5% 0, 91.5% 0, 100% 30%, 100% 70%, 91.5% 100%, 8.5% 100%, 0% 70%, 0% 30%);
+        border-radius: 69px;
+    }
+}
+@media only screen and (min-width: 340px) and (max-width: 400px) {
+    .border {
+        clip-path: polygon(9.5% 0, 90.5% 0, 100% 30%, 100% 70%, 90.5% 100%, 9.5% 100%, 0% 70%, 0% 30%);
+        border-radius: 85px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 340px) {
+    .border {
+        clip-path: polygon(11.5% 0, 88.5% 0, 100% 28%, 100% 72%, 88.5% 100%, 11.5% 100%, 0% 72%, 0% 28%);
+        border-radius: 85px;
+    }
+}
+
+/* Days */
+.dayBox {
+    background: black;
+    width: 82px;
+    height: 82px;
+    border-radius: 50px;
+}
+
+.dayCover {
+    width: 78px;
+    height: 78px;
+    background-color: black;
+    border-radius: 50px;
+}
+.day {
+    flex-direction: column;
+    width: 74px;
+    height: 74px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+#dayCount {
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    margin-top: -6px;
+}
+#dayText {
+    font-size: 15px;
+    font-family: 'JetBrains Mono', sans-serif;
+    margin-top: -8px;
+}

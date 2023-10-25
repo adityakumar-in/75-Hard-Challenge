@@ -10,14 +10,14 @@
     margin: 10px;
     padding: 1px;
 }
-#daysContainer {
-    white-space: nowrap; /* Prevents text from wrapping to the next line */
-    overflow: hidden;
-    background-color: black;
+#daysContainer::-webkit-scrollbar {
+    display: none;
 }
-#scrollContainer {
-    width: 100%;
-    overflow: hidden; /* Hide the scrollbar */
+#daysContainer {
+    background-color: black;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; 
 }
   
 
@@ -119,4 +119,11 @@
     font-size: 15px;
     font-family: 'JetBrains Mono', sans-serif;
     margin-top: -8px;
+}
+
+#d1 {
+    padding-left: 20px;
+}
+#d75 {
+    padding-right: 20px;
 }

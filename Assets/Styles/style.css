@@ -11,3 +11,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+.center-vertically {
+    display: flex;
+    align-items: center;
+}

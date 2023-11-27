@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap');
+
+/* Days */
+.dayCover {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px;
+}
+.day {
+    flex-direction: column;
+    width: 74px;
+    height: 74px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+#dayCount {
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    margin-top: -6px;
+}
+#dayText {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: -8px;
+}
+
+#t1 {
+    margin-left: 20px;
+}
+#d75 {
+    padding-right: 20px;
+}

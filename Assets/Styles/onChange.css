@@ -1,3 +1,15 @@
-.activeDay { /* Change Border of Day Circle */
-    background: linear-gradient(to right, #FDD835, #6d0878)
+.active { /* Change Border of Day Circle */
+    background: linear-gradient(to right, #900C3F, #900C3F, #C70039)
+}
+.done {
+    background-color: #fafafa;
+}
+.onGoing {
+    background-color: #d68e09;
+}
+.hoverTick {
+    background-color: #1e7b37;
+}
+.hoverCross {
+    background-color: #710d0d;
 }

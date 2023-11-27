@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap');
+
+#daysContainer, #daysCover {
+    width: 96vw;
+    height: 90px;
+}
+#daysCover {
+    background: linear-gradient(to right, rgb(105, 28, 28), rgb(170, 65, 65), #76c1e7, #CCEEFF);
+    margin: 10px;
+    padding: 1px;
+}
+#daysContainer::-webkit-scrollbar {
+    display: none;
+}
+#daysContainer {
+    background-color: black;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; 
+}
